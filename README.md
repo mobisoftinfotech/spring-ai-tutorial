@@ -4,7 +4,7 @@ This project demonstrates how to integrate **Spring AI** into a Spring Boot appl
 
 ## Project Overview
 
-This is a single Spring Boot app exposing a REST API endpoint that dynamically interacts with different LLM providers depending on the **active profile**:
+This is a single Spring Boot app exposing a REST API endpoint that dynamically interacts with different LLM providers depending on the **module parameter in requesst**:
 
 - Spring Boot `3.5.0`
 - Java `17`
@@ -41,13 +41,6 @@ Key dependencies and configurations used:
 - `spring-ai-bom`: To ensure all springai dependencies stay aligned and compatible
 - `spring-snapshots` repository : To resolve springai latest versions
 ## Setup & Configuration
-
-### Profiles
-
-This app supports two Spring profiles, defined in `pom.xml` :
-
-- `openai`: Uses OpenAI models  
-- `gemini`: Uses Google Gemini (via Vertex AI)
 
 ### application.properties file
 #### For OpenAI
